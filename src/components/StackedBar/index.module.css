@@ -1,0 +1,62 @@
+.stackedBar {
+  
+  display: flex;
+  grid-column: span 2;
+  height: 100%;
+  flex-direction: column;
+  gap: 8px;
+  
+
+}
+.container {
+  flex : 1;
+  grid-column: span 2;
+  display: flex;
+  
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+.colLeft, .colRight {
+  transition: width 1s ease-in-out; /* Animación rápida para el cambio de ancho */
+}
+
+.colLeft {
+  background-color: #239cff;
+  padding: 16px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.colRight {
+  background-color: #4caeff;
+  padding: 16px;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  font-size: 20px;
+  margin-bottom: 4px;
+  padding: 0%;
+  margin: 0;
+  align-items: center;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.value {
+  font-size: 24px;
+  font-weight: bold;
+}

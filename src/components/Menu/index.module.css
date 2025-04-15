@@ -1,0 +1,69 @@
+/* This file contains the CSS styles for the Menu component. */
+.menuContenedor
+{
+    height: 100%;
+    width: 100%;
+    box-shadow: #adadad 0px 0px 10px 0px;
+    box-sizing: border-box;
+    padding-right: 8px;
+    
+}
+.menuContenedorLogo
+{
+    height: 18%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuLogo
+{
+    height: 38%;
+    width: 88%;
+}
+ 
+ /* This file contains the CSS styles for the SubMenu component. */
+
+.subMenuContainer {
+    border-radius: 5px;
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 16px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.subMenuHeader {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    color: #002856;
+    font-weight: bold;
+    border-bottom: 1px solid #ddd;
+}
+
+.subMenuIcon {
+    height: 14px;
+    width: 14px;
+    margin-right: 10px;
+}
+
+.subMenuArrow {
+    margin-left: auto;
+}
+
+.subMenuItem {
+    display: flex;
+    align-items: center;
+    padding: 10px 10px 10px 30px;
+    cursor: pointer;
+    color: #002856;
+}
+
+.subMenuItem:hover {
+    background-color: #f2f4f8;
+}

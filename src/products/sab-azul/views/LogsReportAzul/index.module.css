@@ -1,0 +1,149 @@
+
+
+/*StepReportView*/
+.stepReportView {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap; /* En caso de que necesite adaptarse en pantallas pequeñas */
+  gap: 1rem;
+}
+
+.stepReportView > div {
+  flex: 1;
+
+}
+
+pre, code {
+  white-space: pre-wrap !important;   /* Permite que el texto se ajuste */
+  word-break: break-word !important;  /* Rompe palabras largas */
+  overflow-x: auto !important;      /* Oculta scroll horizontal */
+  max-width: 100% !important;         /* Asegura que no se pase del contenedor */
+}
+
+
+
+.logsReportContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 5%;
+  margin-top: 2%;
+  background-color: #f8f9fa;
+
+}
+
+/*LogSteps*/
+.noOverflow :global(.ant-steps-item),
+.noOverflow :global(.ant-steps-item-container) {
+
+
+  flex: none;
+  margin: 2px;
+
+}
+
+:global(:where(.css-dev-only-do-not-override-1d4w9r2).ant-steps.ant-steps-horizontal:not(.ant-steps-label-vertical) .ant-steps-item) {
+  padding-inline-start: 0;
+}
+
+:global :where(.css-dev-only-do-not-override-1d4w9r2).ant-steps {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: rgba(0, 0, 0, 0.88);
+  font-size: 0;
+  line-height: 1.5714285714285714;
+  list-style: none;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  display: flex;
+  width: 100%;
+  text-align: initial;
+  flex-wrap: wrap;
+  justify-content: center;
+  overflow: auto;
+
+}
+
+.logStepsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 2%;
+  margin-top: 2%;
+  background-color: #f8f9fa;
+}
+
+/*CodeViewer*/
+.container {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  overflow: hidden;
+  font-family: sans-serif;
+  height: 400px;
+  padding: 10px;
+
+}
+
+.header {
+  background-color: #fff;
+  padding: 10px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.controls button {
+  margin-left: 10px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  font-size: 14px;
+}
+
+.codeWrapper {
+  background-color: #282c34;
+  min-height: 100px; 
+  overflow: auto;
+  height: 85%;
+ 
+  border-radius: 8px;
+}
+
+
+/* HeaderLog */
+.headerContainer {
+  display: flex;
+  align-items: flex-start;
+  align-items: center;
+  gap: 16px;
+  background-color: #f8f9fa;
+  font-size: 13px;
+  flex-wrap: wrap;
+  height: 70px;
+
+}
+
+.item {
+  white-space: nowrap;
+}
+
+.estado {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-weight: bold;
+  color: white;
+}
+
+.estadoTrue {
+  background-color: #28a745;
+}
+
+.estadoFalse {
+  background-color: #dc3545;
+}

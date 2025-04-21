@@ -2,12 +2,7 @@ import React from "react";
 import Styles from "./index.module.css";
 import { DatePicker, Space, Input, Collapse } from "antd";
 import { CreateReports } from "./index.jsx";
-import HeaderLog from "./HeaderLog.jsx";
-
 const { RangePicker } = DatePicker;
-
-
-
 const LogsReportAzul = () => {
 
   let iam_request_log = [
@@ -28,14 +23,8 @@ const LogsReportAzul = () => {
     },
   ];
 
-
-
- 
   let reports = CreateReports(iam_request_log);
 
-  //save
-
-  
   const onChange = (key) => {
     console.log(key);
   };

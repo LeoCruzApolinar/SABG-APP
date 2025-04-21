@@ -28,7 +28,6 @@ pre, code {
   gap: 16px;
   margin: 5%;
   margin-top: 2%;
-  background-color: #f8f9fa;
 
 }
 
@@ -125,7 +124,8 @@ pre, code {
   background-color: #f8f9fa;
   font-size: 13px;
   flex-wrap: wrap;
-  height: 70px;
+  height: 100%;
+  font-size: 12px;
 
 }
 

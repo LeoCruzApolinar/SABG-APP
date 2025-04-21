@@ -1,0 +1,22 @@
+.gestionUsuarioContenedor{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 8%;
+    padding-top: 0%;
+    width: 100%;
+    height: 100%;
+}
+
+.gestionUsuarioContenedorBotonAgregar{
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 2%;
+}
+
+.botonAgregarUsuario
+{
+    background-color: #9F61A7; 
+    color: white;
+
+}

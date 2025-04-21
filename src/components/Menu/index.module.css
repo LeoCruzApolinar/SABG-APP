@@ -1,69 +1,89 @@
-/* This file contains the CSS styles for the Menu component. */
-.menuContenedor
-{
-    height: 100%;
-    width: 100%;
-    box-shadow: #adadad 0px 0px 10px 0px;
-    box-sizing: border-box;
-    padding-right: 8px;
-    
-}
-.menuContenedorLogo
-{
-    height: 18%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.menuLogo
-{
-    height: 38%;
-    width: 88%;
-}
- 
- /* This file contains the CSS styles for the SubMenu component. */
-
 .subMenuContainer {
-    border-radius: 5px;
-    font-family: Roboto;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 16px;
-    text-align: left;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    color: #002856;
+    width: 100%;
 }
 
 .subMenuHeader {
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding: 0 10px 0 10px;
     cursor: pointer;
-    color: #002856;
     font-weight: bold;
-    border-bottom: 1px solid #ddd;
+    border-radius: 6px;
+    margin: 15px 0;
+    transition: background-color 0.3s;
+}
+
+.subMenuHeader:hover {
+    background-color: #cce0ff;
 }
 
 .subMenuIcon {
-    height: 14px;
-    width: 14px;
+    height: 18px;
+    width: 18px;
     margin-right: 10px;
 }
 
 .subMenuArrow {
     margin-left: auto;
+    font-size: 14px;
 }
 
 .subMenuItem {
     display: flex;
     align-items: center;
-    padding: 10px 10px 10px 30px;
+    padding: 10px 15px;
+    margin-left: 10px;
     cursor: pointer;
-    color: #002856;
+    transition: background-color 0.3s;
+    border-radius: 5px;
 }
 
 .subMenuItem:hover {
-    background-color: #f2f4f8;
+    background-color: rgb(222, 229, 248);
+}
+
+
+.childContainer {
+    margin-left: 25px;
+    padding-left: 5px;
+    border-left: 2px dashed #ccc;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+
+    .subMenuHeader,
+    .subMenuItem {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .subMenuIcon {
+        height: 16px;
+        width: 16px;
+    }
+
+    .subMenuArrow {
+        font-size: 12px;
+    }
+}
+
+
+.menuContenedor {
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menuContenedorLogo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
 }

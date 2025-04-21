@@ -4,17 +4,19 @@ import SubMenu from "./SubMenu";
 import { MenuConfig } from "../../config/menu.config";
 import Logo from "../../assets/LogoGCS.svg";
 
-
 const Menu = () => {
-    
-  const { mainOption, subOptions } = MenuConfig();
+  const { mainOption } = MenuConfig();
+
+
 
   return (
     <div className={Styles.menuContenedor}>
       <div className={Styles.menuContenedorLogo}>
-      <img src={Logo} alt="Logo GCS" className={Styles.menuLogo} />
+        <img src={Logo} alt="Logo GCS" className={Styles.menuLogo} />
       </div>
-      <SubMenu Opcion={mainOption} SubOpciones={subOptions} />
+      {mainOption.map((op, index) => (
+        <SubMenu key={index} Opcion={op} SubOpciones={op.child} />
+      ))}
     </div>
   );
 };
